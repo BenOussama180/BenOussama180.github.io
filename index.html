@@ -4,133 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website | OUSSAMA</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="./images/site.webmanifest">
-    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Build animated components like a pro</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/app.js" defer></script>
   </head>
   <body>
-    <main
-      class="dark:bg-gray-800 font-mono bg-white relative overflow-hidden h-screen"
-    >
-      <div
-        class="hidden md:block absolute -bottom-32 -left-32 w-96 h-96 transform transition duration-300 ease-in-out hover:scale-110 hover:translate-y-1"
-      >
-        <div
-          class="absolute text-extrabold text-xl right-12 z-20 text-start top-1/4"
-        >
-          <span class="text-7xl"> 💡 </span>
-          <p>Got a project ?</p>
-          <a href="mailto:oussama.bendriss@outlook.com" class="underline">
-            Let&#x27;s talk
-          </a>
-        </div>
+    <div class="tracker"></div>
+    <section class="showcase overflow-hidden">
+      <a href="./index.html" class="logo">
         <svg
-          viewBox="0 0 200 200"
-          class="absolute w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="logo-image"
         >
           <path
-            fill="#FFDBB9"
-            d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,74.1,43.2C66.7,57.2,57.6,70.6,45,78.1C32.4,85.6,16.2,87.1,0.7,85.9C-14.8,84.7,-29.6,80.9,-43.9,74.4C-58.3,67.9,-72,58.7,-79.8,45.9C-87.7,33,-89.5,16.5,-88.9,0.3C-88.4,-15.9,-85.4,-31.7,-78.1,-45.4C-70.8,-59.1,-59.1,-70.6,-45.3,-77.9C-31.6,-85.3,-15.8,-88.5,-0.3,-88.1C15.3,-87.6,30.5,-83.5,44.7,-76.4Z"
-            transform="translate(100 100)"
-          ></path>
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+          />
         </svg>
-      </div>
-      <header class="h-24 sm:h-32 flex items-center z-30 w-full">
-        <div class="container mx-auto px-6 flex items-center justify-between">
-          <div
-            class="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center"
-          >
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 1792 1792"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"
-              ></path>
-            </svg>
-            <span class="text-xs ml-3 mt-1">
-              oussama.bendriss@outlook.com
-            </span>
-          </div>
-          <div class="flex items-center">
-            <nav
-              class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden"
-            >
-              <a
-                href="https://web.facebook.com/oussama.bendriss.3/"
-                target="_blank"
-                class="py-2 px-6 flex hover:text-black hover:bg-gray-200 rounded transform transition duration-300 ease-in-out hover:scale-110 hover:translate-y-1"
-              >
-                <img src="./images/fb.svg" alt="facebook" class="h-12 w-12" />
-              </a>
-              <a
-                href="https://www.instagram.com/simplyoussama/"
-                target="_blank"
-                class="py-2 px-6 flex hover:text-black hover:bg-gray-200 rounded transform transition duration-300 ease-in-out hover:scale-110 hover:translate-y-1"
-                ><img src="./images/ig.svg" alt="facebook" class="h-12 w-12" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/oussamabendriss/"
-                target="_blank"
-                class="py-2 px-6 flex hover:text-black hover:bg-gray-200 rounded transform transition duration-300 ease-in-out hover:scale-110 hover:translate-y-1"
-              >
-                <img src="./images/in.svg" alt="facebook" class="h-12 w-12" />
-              </a>
-            </nav>
-            <button class="lg:hidden flex flex-col ml-4">
-              <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-              <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-              <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-            </button>
-          </div>
-        </div>
-      </header>
-      <div class="flex relative z-20 items-center">
-        <div
-          class="container mx-auto px-6 flex flex-col justify-between items-center relative py-4"
-        >
-          <div class="flex flex-col">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-28 h-28 mx-auto hover:text-orange-300 hover:animate-spin">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
-            </svg>
-            
-            <p class="text-3xl my-6 text-center dark:text-white hover:animate-bounce ">
-              Hi, I&#x27;m  <span class="animate-spin">Oussama Bendriss 🤘</span> 
-            </p>
-              
-                  <h2 class="max-w-3xl text-5xl md:text-6xl font-medium mx-auto dark:text-white text-gray-800 text-center py-2"><span class="hover:font-bold hover:text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-orange-500">
-                    Lead Software Engineer,
-                    </span>
-                  <span class="hover:font-bold hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-red-500">
-                    specialized in Building digital products, 
-                    </span>
-                  <span class="hover:font-bold hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500">
-                    brands, and experiences.
-                    <span>
+      </a>
 
-                    </h2>
-                      
-            <div class="flex items-center justify-center mt-4">
-              <a
-                href="mailto:oussama.bendriss@outlook.com"
-                class="uppercase py-2 my-2 px-4 md:mt-16 bg-transparent dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md transform transition duration-300 ease-in-out hover:scale-110 hover:translate-y-1"
-              >
-                CONNECT WITH ME
-              </a>
-            </div>
-          </div>
+      <nav class="navbar vertical-center line line-vertical">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/oussamabendriss/"
+              class="link"
+              target="blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="mailto:oussama.bendriss@outlook.com" class="link"
+              >oussama.bendriss@outlook.com</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link"></a>
+          </li>
+          <li>
+            <a href="#" class="link xl-hidden">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        href=""
+        class="link link-dashboard sm-hidden vertical-center line line-vertical"
+        >Reload Animations</a
+      >
+
+      <h1 class="title line line-horizontal overflow-hidden">
+        <span class="to-right has-in-common" style="--delay: 0s">Oussama</span>
+      </h1>
+
+      <h2 class="subtitle overflow-hidden">
+        <span class="to-right has-in-common" style="--delay: 0.15s"
+          >Bendriss</span
+        >
+      </h2>
+
+      <div class="vertical-text line line-vertical">
+        <div class="vertical-text-inner overflow-hidden">
+          <span class="to-bottom has-in-common" style="--delay: 0.25s"
+            >The future is now</span
+          >
         </div>
       </div>
-    </main>
+
+      <div class="description line line-horizontal">
+        <p class="overflow-hidden">
+          <span class="to-bottom has-in-common" style="--delay: 0.035s"
+            >Lead Software Engineer, specialized in Building digital products,
+            brands, and experiences.</span
+          >
+        </p>
+      </div>
+
+      <a
+        href="mailto:oussama.bendriss@outlook.com"
+        class="cta link scale-rotate has-in-common"
+        style="--delay: 0.75s"
+        >connect <br />
+        with me</a
+      >
+
+      <!-- <span class="copyright copyright-year line line-vertical">&copy;2022</span>
+
+            <span class="copyright copyright-name line line-horizontal">Automation X, LLC. All rights reserved.</span> -->
+
+      <img
+        src="./assets/images/1.png"
+        alt=""
+        class="shape has-in-common sm-hidden"
+        data-offset=".05"
+        style="--delay: 0.5s"
+      />
+
+      <img
+        src="./assets/images/1.png"
+        alt=""
+        class="shape shape-md has-in-common sm-hidden"
+        data-offset=".025"
+        style="--delay: 0.25s"
+      />
+
+      <img
+        src="./assets/images/1.png"
+        alt=""
+        class="shape shape-lg has-in-common sm-hidden"
+        data-offset=".02"
+        style="--delay: 0.35s"
+      />
+    </section>
   </body>
 </html>
